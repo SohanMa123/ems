@@ -31,7 +31,7 @@ public class EmployeeController {
 	}
 	
 	@RequestMapping(method = RequestMethod.POST)
-	public Employee createEmployeeUsingQueryParameters(@RequestBody Employee employee) {
+	public Employee createEmployee(@RequestBody Employee employee) {
 		return employeeService.createEmployee(employee);
 	}
 }
