@@ -2,10 +2,11 @@ package com.devsphere.ems.entity;
 
 public class Employee {
 	private String name;
-	private int id;
-	private int salary;
+	private Integer id;
+	private Integer salary;
+	private String mobNo;
 
-	public Employee(String name, int id, int salary) {
+	public Employee(String name, Integer id, Integer salary) {
 		this.name = name;
 		this.id = id;
 		this.salary = salary;
@@ -24,19 +25,25 @@ public class Employee {
 		this.name = name;
 	}
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
-	public int getSalary() {
+	public Integer getSalary() {
 		return salary;
 	}
 
-	public void setSalary(int salary) {
+	public void setSalary(Integer salary) {
 		this.salary = salary;
+	}
+	public String getMobNo() {
+		return mobNo;
+	}
+	public void setMobNo(String mobNo) {
+		this.mobNo = mobNo;
 	}
 }
