@@ -18,4 +18,8 @@ public class EmployeeService {
 		return employeeHelper.getAllEmployees();
 	}
 
+	public Employee createEmployee(Employee employee) {
+		return employeeHelper.createEmployee(employee);
+	}
+
 }
